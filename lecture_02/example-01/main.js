@@ -1,5 +1,5 @@
-(function() {
-  var name = "Hello MATF";
+var exampleVariable = 'MATF';
+console.log(exampleVariable);
 
-  console.log(name);
-})();
+exampleVariable = 10;
+console.log(exampleVariable);
