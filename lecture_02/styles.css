@@ -1,0 +1,36 @@
+* {
+  font-family: font70614;
+  color: #003e9b;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(assets/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 8px auto;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+}
