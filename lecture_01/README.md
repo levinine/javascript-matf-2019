@@ -4,12 +4,10 @@
 
 In the Lecture 01 you will find folowing topics:
 
-* Source code versioning 
-* Intro to JavaScript platform 
-    * Execution of JavaScript program 
-    * JavaScript exectuion context
-    * JavaScript & browser, DOM manipulation
+- Source code versioning
+- Intro to JavaScript platform
+  - Execution of JavaScript program
+  - JavaScript exectuion context
+  - JavaScript & browser, DOM manipulation
 
-
-
-*Happy learning!*
+**Happy learning!**
