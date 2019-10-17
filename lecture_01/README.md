@@ -2,7 +2,7 @@
 
 ## Lectrure 01
 
-In the Lecture 01 you will find folowwing topics:
+In the Lecture 01 you will find folowing topics:
 
 * Source code versioning 
 * Intro to JavaScript platform 
