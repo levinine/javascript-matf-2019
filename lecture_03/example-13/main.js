@@ -11,3 +11,5 @@ function foo() {
 function bar(fn) {
     fn(); // will execute baz
 }
+
+foo();
