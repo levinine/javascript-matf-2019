@@ -19,6 +19,5 @@ Bar.prototype.myLabel = function() {
 
 var a = new Bar('a', 'obj a');
 
-a.myName();
-a.myLabel();
-
+console.log(a.myName());
+console.log(a.myLabel());

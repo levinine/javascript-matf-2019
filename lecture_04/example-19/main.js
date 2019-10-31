@@ -8,6 +8,6 @@ Foo.prototype.myName = function () {
 
 var a = new Foo('a');
 var b = new Foo('b');
-a.myName();
-b.myName();
+console.log(a.myName());
+console.log(b.myName());
 
