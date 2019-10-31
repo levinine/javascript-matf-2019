@@ -8,8 +8,8 @@ var obj1 = {
 }
 
 var obj2 = {
-    a: 2,
-    obj: obj2
+    // a: 2,
+    obj: obj1
 }
 
-obj1.obj2.foo();
+obj2.obj.foo();

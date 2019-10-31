@@ -11,4 +11,4 @@ var bar = foo.bind(obj);
 
 var b = bar(3);
 
-console.log(b());
+console.log(b);

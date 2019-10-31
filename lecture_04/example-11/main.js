@@ -7,10 +7,10 @@ var obj = {
     a: 2
 };
 
-var bar = function(param) {
-    return foo.apply(obj, param);
+function bar(param) {
+    return foo.call(obj, param);
 }
 
 var b = bar(3);
 
-console.log(b());
+console.log(b);

@@ -6,4 +6,5 @@ Foo.prototype.constructor === Foo;
 
 var a = new Foo();
 
-a.constructor === Foo; // true
+console.log(a.constructor === Foo); // true
+
