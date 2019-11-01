@@ -2,7 +2,7 @@ function Foo() {
     //...
 }
 
-Foo.prototype.constructor === Foo;
+console.log(Foo.prototype.constructor === Foo);
 
 var a = new Foo();
 

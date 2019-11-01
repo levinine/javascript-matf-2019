@@ -1,5 +1,8 @@
 function Foo(name) {
     this.name = name;
+    // this.myName = function() {
+    //     return this.name;
+    // }
 }
 
 Foo.prototype.myName = function () {
