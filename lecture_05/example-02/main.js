@@ -1,20 +1,19 @@
-function foo(num) {
-    console.log('foo:' + num);
+var eventLoop = [ ];
+var event;
 
-    // keep track of how many times foo is called
-    data.count++;
-}
+console.log('Starting event loop');
 
-var data = {
-    count: 0
-}
+while (true) {
+    if (eventLoop.length > 0) {
+        console.log('Pick first event');
+        event = eventLoop.shift();
 
-var i;
-
-for (i = 0; i < 10; i++) {
-    if (i > 5) {
-        foo(i);
+        try {
+            console.log('Try to execute an event');
+            event();
+        }
+        catch (err) {
+            console.log(err);
+        }
     }
 }
-
-console.log(data.count);
