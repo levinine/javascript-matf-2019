@@ -13,8 +13,7 @@ bar(p);
 baz(p);
 
 function bar(arg) {
-    arg
-        .then(function (promiseResult) {
+    arg.then(function (promiseResult) {
             console.log(promiseResult);
         });
 }
