@@ -1,8 +1,20 @@
-function foo () {
-    'use strict';
-    console.log(this.a);
+function add(getX, getY, cb) {
+    var x, y;
+    getX(function (xVal) {
+        x = xVal;
+        if(y != undefined) {
+            cb(x + y);
+        }
+    });
+
+    getY(function (xVal) {
+        y = yVal;
+        if(x != undefined) {
+            cb(x + y);
+        }
+    });
 }
 
-var a = 2;
-
-foo();
+add(fetchX, fetchY, function (sum) {
+    console.log(sum);
+});
