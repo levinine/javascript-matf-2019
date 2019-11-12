@@ -18,4 +18,4 @@ delay(1000) //step 1
     })
     .then(function step5() {
         console.log('step 5 after another 500ms');
-    })
+    });
