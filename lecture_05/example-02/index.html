@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Example 02</title>
+    <link
+      href="https://www.fontify.me/wf/1f53a8cec1efcf29063a5295f1af12d7"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <h1>Example 02 - Event loop implementation</h1>
+    <div class="sample">
+      <iframe
+              src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&t=one-light&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=12px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=4x&wm=false&code=var%2520eventLoop%2520%253D%2520%255B%2520%255D%253B%250Avar%2520event%253B%250A%250Aconsole.log('Starting%2520event%2520loop')%253B%250A%250Awhile%2520(true)%2520%257B%250A%2520%2520%2520%2520if%2520(eventLoop.length%2520%253E%25200)%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520console.log('Pick%2520first%2520event')%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520event%2520%253D%2520eventLoop.shift()%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520try%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520console.log('Try%2520to%2520execute%2520an%2520event')%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520event()%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520catch%2520(err)%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520console.log(err)%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%257D%250A%257D%250A"
+              style="transform:scale(1); width:1024px; height:473px; border:0; overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+      </iframe>
+    </div>
+    <p><a href="../index.html">Go back to examples</a></p>
+    <script src="main.js"></script>
+  </body>
+</html>
