@@ -1,0 +1,22 @@
+{
+  "name": "js-matf-2019",
+  "version": "1.0.0",
+  "description": "JavaScript course at MATF 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://some-domain.com/js-matf-package"
+  },
+  "author": "Levi9-MATF",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.5.0",
+    "aws-sdk": "^2.77.0",
+    "lodash": "^4.17.4",
+    "uuid": "^3.3.0"
+  }
+}
