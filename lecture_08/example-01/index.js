@@ -7,4 +7,4 @@ app.get('/hello', (request, response) => {
   response.send('/hello endpoint response!');
 });
 
-app.listen(port, () => console.log(`API is listening on port ${ port }`));
+app.listen(port, () => console.log(`API is listening on port ${ port }!`));
