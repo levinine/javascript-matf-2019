@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Hello",
+			"name": "/hello",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -17,6 +17,153 @@
 					],
 					"path": [
 						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/users/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Lorem Ipsum",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "lorem@ipsum.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "12345678900",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Dolor sit Amet",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "dolor@example.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "09876543211",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/users/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/users/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"1"
 					]
 				}
 			},
@@ -47,7 +194,7 @@
 	],
 	"variable": [
 		{
-			"id": "2d88ac0a-e932-4d86-8bfc-6cc62b47e019",
+			"id": "1e9cd2fd-12a7-415a-9b30-f0dfa5da11c8",
 			"key": "host",
 			"value": "http://localhost:3000",
 			"type": "string"
