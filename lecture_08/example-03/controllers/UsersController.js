@@ -44,7 +44,7 @@ class UsersController {
   async getUser() {
     await this.mongoDBService.connect();
 
-    let user = await this.mongoDBService.find('users', { id: parseInt(this.request.params.id) });
+    let user = await this.mongoDBService.findOne('users', { id: parseInt(this.request.params.id) });
 
     this.mongoDBService.disconnect();
     this.response.send(user);
