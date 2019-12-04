@@ -2,17 +2,19 @@ let users = [
   {
     "id": 1,
     "name": "Frodo Baggins",
-    "email": "frodohasthering@lotr.com"
+    "email": "frodohasthering@lotr.com",
+    "phone": "00000000001"
   },
   {
     "id": 2,
     "name": "Smeagol Gollum",
-    "email": "myprecious@gmail.com"
+    "email": "myprecious@gmail.com",
+    "phone": "00000000002"
   }
 ];
 
-// drop all previous data in the table
-db.container.drop();
+db.createCollection('users');
+const usersCollection = db.getCollection('users');
 
 for (let user of users)
-  db.container.insert(user);
+  usersCollection.insert(user);

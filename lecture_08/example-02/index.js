@@ -9,12 +9,14 @@ let users = [
   {
     "id": 1,
     "name": "Frodo Baggins",
-    "email": "frodohasthering@lotr.com"
+    "email": "frodohasthering@lotr.com",
+    "phone": "00000000001"
   },
   {
     "id": 2,
     "name": "Smeagol Gollum",
-    "email": "myprecious@gmail.com"
+    "email": "myprecious@gmail.com",
+    "phone": "00000000002"
   }
 ];
 
