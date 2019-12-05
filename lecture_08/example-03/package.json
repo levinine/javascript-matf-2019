@@ -1,6 +1,10 @@
 {
   "name": "example-03",
   "version": "1.0.0",
+  "description": "JavaScript course at MATF 2019",
+  "main": "index.js",
+  "author": "Levi9-MATF",
+  "license": "MIT",
   "scripts": {
     "start": "node index.js"
   },
