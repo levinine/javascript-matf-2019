@@ -9,13 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://some-domain.com/js-matf-package"
+    "url": "https://github.com/levinine/javascript-matf-2019/tree/master/lecture_07/example-05"
   },
   "author": "Levi9-MATF",
   "license": "MIT",
   "dependencies": {
     "async": "^2.5.0",
-    "aws-sdk": "^2.77.0",
     "lodash": "^4.17.4",
     "uuid": "^3.3.0"
   }
