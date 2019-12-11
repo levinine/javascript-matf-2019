@@ -1,0 +1,16 @@
+{
+  "name": "example-03",
+  "version": "1.0.0",
+  "description": "JavaScript course at MATF 2019",
+  "main": "index.js",
+  "author": "Levi9-MATF",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.5"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "js-matf-2019",
+  "version": "1.0.0",
+  "description": "JavaScript course at MATF 2019",
+  "main": "index.js",
+  "author": "Levi9-MATF",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://some-domain.com/js-matf-package"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
