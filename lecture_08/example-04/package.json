@@ -1,0 +1,31 @@
+{
+  "name": "js-matf-2019-lecture-08",
+  "version": "1.0.0",
+  "description": "JavaScript course at MATF 2019",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf build && tsc",
+    "start": "node build/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts --watch src",
+    "test": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.1",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.2.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
