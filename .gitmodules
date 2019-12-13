@@ -1,0 +1,3 @@
+[submodule "lecture_09/example-01/phonebook"]
+	path = lecture_09/example-01/phonebook
+	url = https://vcs.levi9.com/m.veljovic/phonebook.git
