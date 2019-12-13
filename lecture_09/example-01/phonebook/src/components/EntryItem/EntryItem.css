@@ -1,0 +1,9 @@
+.entry-item {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.entry-item .ui.card {
+  width: 100%;
+  padding: 20px 0;
+}

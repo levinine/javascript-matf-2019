@@ -1,0 +1,30 @@
+.menu-bar {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  background: #1a1a1a;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 64px;
+  color: lightgray;
+}
+
+.logo {
+  margin: 0 16px;
+  height: 40px;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+}
+
+.menu-list-item {
+  margin: 0 16px;
+}
