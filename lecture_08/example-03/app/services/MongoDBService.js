@@ -61,7 +61,7 @@ class MongoDBService {
   delete(collection, findParameters) {
     return new Promise((resolve, reject) => {
       this.database.collection(collection).deleteOne(findParameters, function (error) {
-        if (error) reject();
+        if (error) reject(error);
 
         resolve();
       });

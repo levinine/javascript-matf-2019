@@ -1,0 +1,36 @@
+<form *ngIf="entry">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      [disabled]="disableInputsOnSaving"
+      type="text" 
+      class="form-control" 
+      name="name" 
+      placeholder="Enter name" 
+      required 
+      [(ngModel)]="entry.name">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      name="phone" 
+      [(ngModel)]="entry.phone"
+      [disabled]="disableInputsOnSaving"
+      placeholder="Enter phone">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input 
+      type="email" 
+      class="form-control" 
+      name="email" 
+      [disabled]="disableInputsOnSaving"
+      [(ngModel)]="entry.email" 
+      placeholder="Enter email">
+  </div>
+  <button [disabled]="disableInputsOnSaving" class="btn btn-primary" (click)="saveOrAdd()">
+    {{ { edit: 'Save', new:  'Add'}[ mode ]  }}
+  </button>
+</form>
