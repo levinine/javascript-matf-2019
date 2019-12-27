@@ -1,0 +1,15 @@
+<div class="card-body">
+  Name: {{entry.name}} <br>
+  Phone: {{entry.phone}} <br>
+  Email: {{entry.email}}
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-6">
+      <button class="btn btn-danger btn-block" (click)="delete()">Delete</button>
+    </div>
+    <div class="col-6">
+      <a [routerLink]="['/entry', entry._id, 'edit']"  class="btn btn-info btn-block">Edit</a>
+    </div>
+  </div>
+</div>
