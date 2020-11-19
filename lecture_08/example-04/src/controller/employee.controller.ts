@@ -5,8 +5,11 @@ import { Employee } from '../models/employee'
 export class EmployeeController {
     public path: string = '/employees'
     public router = express.Router()
-    
+
+    private employees: Employee[]
+
     constructor() {
+        this.generateEmployees()
         this.initRoutes()
     }
 
@@ -17,10 +20,13 @@ export class EmployeeController {
     getEmployees = (req: Request, res: Response) => {
         // go to database/cache ... and get data
 
-        let empl1 = new Employee(1,'Mira Miric', 'MATF')
-        let empl2 = new Employee(2,'Jova Jovic', 'Levi9')
-        var employees: Employee[] = [empl1, empl2]
+        res.send(this.employees)
+    }
 
-        res.send (employees)
+    private generateEmployees(): void {
+        this.employees = [
+            new Employee(1, 'Mira Miric', 'MATF'),
+            new Employee(2, 'Jova Jovic', 'Levi9')
+        ]
     }
 }

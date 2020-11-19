@@ -1,17 +1,11 @@
-import IResource from '../../typings/IResource'
-import MoviesApi from '../../api/MoviesApi'
+import { User } from '../../models/user'
 
-const moviesApi: IResource = new MoviesApi()
+describe('Users Model', () => {
+    it('should get the users full name', () => {
+        const name = "Pera Peric";
 
-describe('Movies API', () => {
-  it('should create a new movie', () => {
-    const movieData: object = {
-      name: 'Pirates of the caribbean',
-      rating: 8.5
-    }
+        const usersData: User = new User(1, name)
 
-    const movie: object = moviesApi.create(movieData)
-
-    expect(movie).toEqual(movieData)
-  })
+        expect(usersData.getFullName()).toEqual(name)
+    })
 })
